@@ -124,10 +124,10 @@ class Game {
   }
   start(speed = 10) {
     document.addEventListener("mousemove", (e) => {
-      this.player.x = e.clientX;
+      this.player.x = e.clientX - this.player.width / 2;
     });
     document.addEventListener("touchmove", (e) => {
-      this.player.x = e.touches[0].clientX;
+      this.player.x = e.touches[0].clientX - this.player.width / 2;
     });
 
     const randomTheta =
