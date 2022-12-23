@@ -126,6 +126,9 @@ class Game {
     document.addEventListener("mousemove", (e) => {
       this.player.x = e.clientX;
     });
+    document.addEventListener("touchmove", (e) => {
+      this.player.x = e.touches[0].clientX;
+    });
 
     const randomTheta =
       Math.random() * (Math.PI / 2 - Math.PI / 4) + Math.PI / 4;
