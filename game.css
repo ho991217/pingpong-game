@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#playboard {
+  background-color: black;
+}
+
+header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: none;
+  z-index: 99;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mobal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #eee;
+  transform: translate(-50%, -50%);
+  padding: 40px 20px 20px 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mobal span {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+#mobal > input {
+  all: unset;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 7px 15px 5px 15px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}

@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ping Pong</h1>
+      <div>Player Score : <span id="scoreboard">0</span></div>
+      <div>Player Best : <span id="bestscore">0</span></div>
+    </header>
+    <!--모달 아님 모발 맞음-->
+    <div id="mobal">
+      <span>난이도를 선택하시와용구리퐁퐁</span>
+
+      <label
+        ><input type="radio" name="level" value="easy" checked /> 나는
+        좃밥이에요 ㅋㅋ 븅신</label
+      >
+      <label>
+        <input type="radio" name="level" value="normal" /> 보통이에요</label
+      >
+      <label>
+        <input type="radio" name="level" value="hard" /> whssk 어려워요</label
+      >
+      <input type="button" id="startbutton" value="!작시" />
+    </div>
+    <canvas id="playboard"></canvas>
+    <script src="game.js"></script>
+  </body>
+</html>
